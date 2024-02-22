@@ -42,8 +42,11 @@ export function getTimeStamp(date: Date): string {
     return `${counter} ${counter === 1 ? "year" : "years"} ago`;
   }
 }
+export function formatLargeNumber(number: number | undefined): string {
+  if (typeof number === 'undefined') {
+    return ''; // or any other default value or error handling logic
+  }
 
-export function formatLargeNumber(number: number): string {
   const absNumber = Math.abs(number);
 
   if (absNumber >= 1e6) {
