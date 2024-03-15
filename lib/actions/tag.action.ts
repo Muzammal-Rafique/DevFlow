@@ -1,3 +1,5 @@
+'use server'
+
 import User from '@/database/user.model';
 import { connectToDatabase } from '../mongoose';
 import { GetAllTagsParams, GetTopInteractedTagsParams } from './sharedTyped.d';
@@ -24,7 +26,7 @@ export async function getTopInteractedTags (params :GetTopInteractedTagsParams) 
       connectToDatabase()
       const tags = await Tag.find({})
 
-      return(tags)
+      return{tags}
     } catch (error) {
       console.log(error)
       throw(error)
