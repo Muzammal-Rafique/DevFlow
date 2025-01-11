@@ -11,8 +11,8 @@ export interface ITag extends Document {
 const TagSchema = new Schema({
   name: { type: String, required: true, unique: true },
   description: { type: String, required: true },
-  questions: [{ type: Schema.Types.ObjectId, ref: "Question" }], // Assuming "Question" is the related model
-  followers: [{ type: Schema.Types.ObjectId, ref: "User" }], // Assuming "User" is the related model
+  questions: [{ type: Schema.Types.ObjectId, ref: "Question" }],
+  followers: [{ type: Schema.Types.ObjectId, ref: "User" }], 
   createdAt: { type: Date, default: Date.now },
 });
 
