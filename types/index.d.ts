@@ -21,6 +21,7 @@ export interface Job {
 }
 
 export interface Country {
+  flags: any;
   name: {
     common: string;
   };
