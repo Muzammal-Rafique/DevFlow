@@ -1,6 +1,6 @@
 import Question from '@/components/forms/Question'
 import { getQuestionById } from '@/lib/actions/question.action';
-import { getUserById } from '@/lib/actions/user.action';
+import { getUserById } from '@/lib/actions/user.actions';
 import { ParamsProps } from '@/types';
 import { auth } from '@clerk/nextjs'
 import type { Metadata } from "next";

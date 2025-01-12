@@ -10,7 +10,7 @@ import { Textarea } from "../ui/textarea"
 import { useState } from "react"
 import { ProfileSchema } from "@/lib/validations"
 import { usePathname, useRouter } from "next/navigation"
-import { updateUser } from "@/lib/actions/user.action"
+import { updateUser } from "@/lib/actions/user.actions"
 
 interface Props {
   clerkId: string;
