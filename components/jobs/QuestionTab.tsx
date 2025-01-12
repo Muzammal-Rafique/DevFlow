@@ -1,4 +1,4 @@
-import { getUserQuestions } from '@/lib/actions/user.action';
+import { getUserQuestions } from '@/lib/actions/user.actions';
 import { SearchParamsProps } from '@/types'
 import React from 'react'
 import QuestionCard from '../cards/QuestionCard';
