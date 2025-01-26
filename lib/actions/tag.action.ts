@@ -14,13 +14,11 @@ export async function getTopInteractedTags(params: GetTopInteractedTagsParams) {
 
     const {userId, limit = 3 } = params;
 
-    // Find the user by clerkId
     const user = await User.findById(userId);
     if (!user) {
       throw new Error("User not found");
     }
 
-    // Find interactions for the user and group by tags
     const tagCountMap = await Interaction.aggregate([
       { $match: { user: user._id, tags: { $exists: true, $ne: [] } } },
       { $unwind: "$tags" },
@@ -31,7 +29,6 @@ export async function getTopInteractedTags(params: GetTopInteractedTagsParams) {
 
     const topTags = tagCountMap.map((tagCount) => tagCount._id);
 
-    // Find the tag documents for the top tags
     const topTagDocuments = await Tag.find({ _id: { $in: topTags } });
 
     return topTagDocuments;
@@ -139,7 +136,7 @@ export async function getQuestionsByTagId(params: GetQuestionsByTagIdParams) {
       options: {
         sort: { createdAt: -1 },
         skip: skipAmount,
-        limit: pageSize + 1 // +1 to check if there is next page
+        limit: pageSize + 1 
       },
       populate: [
         { path: 'tags', model: Tag, select: "_id name" },

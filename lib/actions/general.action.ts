@@ -6,7 +6,6 @@ import { SearchParams } from "./shared";
 import User from "@/database/user.model";
 import Answer from "@/database/answer.model";
 import Tag from "@/database/tag.model";
-// import { model } from "mongoose";
 
 const SearchableTypes = ["question", "answer", "user", "tag"];
 
@@ -29,7 +28,6 @@ export async function globalSearch(params: SearchParams) {
     const typeLower = type?.toLowerCase();
 
     if(!typeLower || !SearchableTypes.includes(typeLower)) {
-      // SEARCH ACROSS EVERYTHING
 
       for (const { model, searchField, type } of modelsAndTypes) {
         const queryResults = await model
@@ -51,7 +49,6 @@ export async function globalSearch(params: SearchParams) {
           )
       }
     } else {
-      // SEARCH IN THE SPECIFIED MODEL TYPE
       const modelInfo = modelsAndTypes.find((item) => item.type === type);
 
       console.log({modelInfo, type});

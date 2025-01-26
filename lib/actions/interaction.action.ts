@@ -11,7 +11,6 @@ export async function viewQuestion(params: ViewQuestionParams) {
 
     const { questionId, userId } = params;
 
-    // Update view count for the question
     await Question.findByIdAndUpdate(questionId, { $inc: { views: 1 }});
 
     if(userId) {
@@ -23,7 +22,6 @@ export async function viewQuestion(params: ViewQuestionParams) {
 
       if(existingInteraction) return;
 
-      // Create interaction
       await Interaction.create({
         user: userId,
         action: "view",
