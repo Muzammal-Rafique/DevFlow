@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 Dev Overflow
 
-## Getting Started
+Dev Overflow is a **full-stack Q&A platform** similar to **Stack Overflow**, built with **Next.js 14** ⚛️. Users can **sign up/login**, **ask questions**, **answer queries**, and **upvote/downvote** responses. 📢💡
 
-First, run the development server:
+## 🔥 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- 🔐 **User Authentication** – Sign up/Login securely.
+- ❓ **Ask Questions** – Post technical questions.
+- 💬 **Answer Questions** – Share your knowledge.
+- 👍👎 **Upvote/Downvote** – Rank the best answers.
+- 🏷️ **Tagging System** – Organize questions efficiently.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Next.js 14** ⚛️ – Server-side rendering & API routes.
+- **React** ⚛️ – Dynamic UI components.
+- **Tailwind CSS** 🎨 – Modern & responsive styling.
+- **MongoDB** 🍃 – Store user data & questions.
+- **Mongoose** 🛢️ – Database ORM for smooth queries.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 🚀 Getting Started
 
-## Learn More
+1. **Clone the repository** 📥
+   ```sh
+   git clone https://github.com/yourusername/dev-overflow.git
+   cd dev-overflow
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Install dependencies** 📦
+   ```sh
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Set up environment variables** 🔑
+   - Create a `.env.local` file and configure database credentials.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+4. **Run the development server** 🏃‍♂️
+   ```sh
+   npm run dev
+   ```
 
-## Deploy on Vercel
+5. **Open in browser** 🌐
+   ```
+   http://localhost:3000
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📸 Screenshots
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Coming soon... 🚧
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to fork the repo and submit a PR. 🔥
+
+## 📜 License
+
+This project is **MIT Licensed** 📄.
+
+---
+
+⭐ **If you like this project, give it a star!** ⭐
