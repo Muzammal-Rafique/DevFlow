@@ -22,8 +22,8 @@ Dev Overflow is a **full-stack Q&A platform** similar to **Stack Overflow**, bui
 
 1. **Clone the repository** 📥
    ```sh
-   git clone https://github.com/yourusername/dev-overflow.git
-   cd dev-overflow
+   git clone https://github.com/Muzammal-Rafique/DevFlow.git
+   cd DevFlow
    ```
 
 2. **Install dependencies** 📦
